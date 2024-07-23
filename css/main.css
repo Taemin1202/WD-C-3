@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+}
+
+.wrap {
+    width: 1000px;
+    display: flex;
+}
+
+.left {
+    width: 200px;
+    height: 650px;
+}
+
+.logo {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dotted #ddd;
+}
+
+.nav {
+    padding-top: 20px;
+}
+
+.main {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.main>li {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.main>li>a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0 10px 10px 0;
+}
+
+.main>li:hover>a {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #333;
+}
+
+.sub {
+    position: absolute;
+    width: 150px;
+    left: 150px;
+    top: 0px;
+    z-index: 50;
+    height: 200px;
+    background-color: #333;
+    display: none;
+}
+
+.sub li {}
+
+.sub li a {
+    display: block;
+    background-color: #333;
+    color: white;
+    line-height: 40px;
+    text-indent: 20px;
+}
+
+.sub li a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.right {
+    width: 800px;
+    height: 650px;
+}
+
+.img_slide {
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.left_move {
+    width: calc(800px * 3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 350px;
+}
+
+.left_move li {
+    float: left;
+    left: 800px;
+    height: 350px;
+}
+
+.contents {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contents>div {
+    width: 33%;
+    height: 200px;
+}
+
+.contents h2 {
+    font-size: 14px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 10px 10px 0 0;
+}
+
+.contents ul {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 170px;
+    border-top: 5px solid #ddd;
+    padding: 5px;
+}
+
+.notice {}
+
+.notice ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.notice ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice ul li a {
+    width: 70%;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.notice ul li span {
+    width: 25%;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.gallery{}
+.gallery ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery ul li{
+    width: 32%;
+}
+
+.gallery ul li img{
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.gallery ul li img:hover{
+    opacity: 0.5;
+}
+
+.banner{
+    border: 5px solid #ddd;
+    padding: 5px;
+    height: 200px;
+    background-color: #f1f1f1;
+}
+
+.banner p{
+    height: 100%;
+}
+
+.banner p a{
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+
+.banner p a img{
+    height: 100%;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+}
+
+.banner p a img:hover{
+    filter: none;
+}
+
+.footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.f_logo{
+    width: 200px;
+}
+
+.f_right{
+    width: 600px;
+    height: 100px;
+}
+
+.f_menu{
+    height: 50%;
+    line-height: 50px;
+    text-align: center;
+}
+
+.f_menu a{
+    padding: 0 5px;
+}
+
+.copy{
+    height: 50%;
+    text-align: center;
+    line-height: 50px;
+    border-top: 1px dotted #ddd;
+}
+
+.popup{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border: 5px groove olivedrab;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup p{
+    padding-top: 20px;
+    text-align: justify;
+    line-height: 2;
+}
+
+.popup h3{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 5px double #ddd;
+}
+
+.close{
+    background-color: crimson;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
